@@ -1,12 +1,27 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <Home99></Home99>
+<!--    <router-view/>-->
   </div>
 </template>
+
+<script>
+  import Home99 from './views/Home99'
+
+  export default {
+
+    components:{
+      Home99
+    },
+    data(){
+      return{
+        active:1,
+      }
+    }
+
+  }
+
+</script>
 
 <style>
 #app {
